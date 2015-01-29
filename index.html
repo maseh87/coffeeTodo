@@ -2,10 +2,13 @@
   <head>
     <title>Coffee Todo</title>
   </head>
-  <body>
+  <body ng-app="todo">
   <script charset="utf-8" src="bower_components/angular/angular.js"></script>
-  <script charset="utf-8" src="app.coffee"></script>
+  <script charset="utf-8" src="app.js"></script>
 
-
+  <div ng-controller="TodoController">
+    <input type="text" ng-model="todo">
+    {{ todo }}
+  </div>
   </body>
 </html>
